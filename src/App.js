@@ -8,6 +8,14 @@ var client, localStream, camera, microphone, audioSelect, videoSelect;
 class App extends Component {
 
   render() {
+
+    var divStyle = {
+      float:'right',
+      width:'210px',
+      height:'147px',
+      display:'inline-block',
+    };
+
     return (
       <div className="App">
 
@@ -31,7 +39,7 @@ class App extends Component {
         </div>
 
         <div id="videoSpot" >
-          <div id="agora_local" ></div>
+          <div id="agora_local" style={divStyle}></div>
         </div>
       </div>
 
